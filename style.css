@@ -1,0 +1,94 @@
+.mainCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.analgDigiCont{
+    width: 450px;
+    height: 300px;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.onlyForStyle{
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+    border-radius: 50%;
+    position: absolute;
+    left: -150px;
+}
+.clockCont {
+    position: absolute;
+    left: -120px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(44, 186, 193);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clockCont p {
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    width: 5px;
+    height: 92%;
+    font-weight: 600;
+    background-color: transparent;
+}
+.cntrClock{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 4;
+}
+.secdHand{
+    position: absolute;
+    top: 40px;
+    width: 1.5px;
+    height: 85px;
+    background-color: rgb(255, 0, 0);
+    transform-origin: bottom;
+    z-index: 3;
+}
+.mintHand{
+    position: absolute;
+    top: 55px;
+    width: 3px;
+    height: 70px;
+    background-color: black;
+    transform-origin: bottom;
+    z-index: 2;
+}
+.hourHand{
+    position: absolute;
+    top: 65px;
+    width: 5px;
+    height: 60px;
+    background-color: black;
+    transform-origin: bottom;
+}
+
+.DigiCont{
+    width: 250px;
+    height: 220px;
+    /* background-color: turquoise;  */
+    position: absolute;
+    left: 150px;
+}
+
+
+.time{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
