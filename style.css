@@ -1,134 +1,133 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 .mainCont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.analgDigiCont{
-    width: 600px;
-    height: 300px;
-    background-color: black;
-    background: linear-gradient(90deg,black ,#036b83)  right,black;
-    background-size:50% 100% ;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    position: relative;
-    border-radius:200px 30px 30px 200px ;
+.analgDigiCont {
+  width: 600px;
+  height: 300px;
+  background-color: black;
+  background: linear-gradient(90deg, black, #036b83) right, black;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 200px 30px 30px 200px;
 }
 .clockCont {
-    width: 250px;
-    height: 250px;
-    margin-left: 25px;
-    border-radius: 50%;
-    background-color: #11bae0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 250px;
+  height: 250px;
+  margin-left: 25px;
+  border-radius: 50%;
+  background-color: #11bae0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clockCont p {
-    position: absolute;
-    margin: 0%;
-    padding: 0%;
-    width: 5px;
-    height: 88%;
-    font-weight: 600;
-    background-color: transparent;
+  position: absolute;
+  margin: 0%;
+  padding: 0%;
+  width: 5px;
+  height: 88%;
+  font-weight: 600;
+  background-color: transparent;
 }
-.clockCont .stick{
-    position: absolute;
-    margin: 0%;
-    padding: 0%;
-    width: 5px;
-    height: 100%;
-    font-weight: 400;
-    font-size: 8px;
-    background-color: transparent;
+.clockCont .stick {
+  position: absolute;
+  margin: 0%;
+  padding: 0%;
+  width: 5px;
+  height: 100%;
+  font-weight: 400;
+  font-size: 8px;
+  background-color: transparent;
 }
 .clockCont .fifth-stick {
-    /* Your styles here */
-   font-weight: 900;
-   font-size: 12px; /* Example style */
+  /* Your styles here */
+  font-weight: 900;
+  font-size: 12px; /* Example style */
 }
-.cntrClock{
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    border-radius: 50%;
-    z-index: 4;
+.cntrClock {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 4;
 }
-.secdHand{
-    position: absolute;
-    top: 40px;
-    width: 1.5px;
-    height: 85px;
-    background-color: rgb(255, 0, 0);
-    transform-origin: bottom;
-    z-index: 3;
+.secdHand {
+  position: absolute;
+  top: 40px;
+  width: 1.5px;
+  height: 85px;
+  background-color: rgb(255, 0, 0);
+  transform-origin: bottom;
+  z-index: 3;
 }
-.mintHand{
-    position: absolute;
-    top: 55px;
-    width: 3px;
-    height: 70px;
-    background-color: black;
-    transform-origin: bottom;
-    z-index: 2;
+.mintHand {
+  position: absolute;
+  top: 55px;
+  width: 3px;
+  height: 70px;
+  background-color: black;
+  transform-origin: bottom;
+  z-index: 2;
 }
-.hourHand{
-    position: absolute;
-    top: 65px;
-    width: 5px;
-    height: 60px;
-    background-color: black;
-    transform-origin: bottom;
+.hourHand {
+  position: absolute;
+  top: 65px;
+  width: 5px;
+  height: 60px;
+  background-color: black;
+  transform-origin: bottom;
 }
 
-    /* .DigiCont{
+/* .DigiCont{
         width: 250px;
         height: 220px;
     } */
 
-.time{
-    font-size: 40px;
-    font-weight: 600;
-    font-family: 'Orbitron', sans-serif;
-    text-align: start;
-    margin: 0;
-    margin-left: 20px;
-    color: white;
+.time {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Orbitron", sans-serif;
+  text-align: start;
+  margin: 0;
+  margin-left: 20px;
+  color: white;
 }
 
-.date{
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    /* margin-left: 20px; */
-    color: white;
+.date {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  color: white;
 }
-@media (max-width:600px) {
-    .analgDigiCont{
-    background: linear-gradient(180deg,black ,#036b83) bottom,black;
-    background-size: 100% 30% ;
+@media (max-width: 600px) {
+  .analgDigiCont {
+    background: linear-gradient(180deg, black, #036b83) bottom, black;
+    background-size: 100% 30%;
     background-repeat: no-repeat;
-        flex-direction: column;
-        width: 300px;
-        height: 540px;
-        border-radius: 200px 200px 20px 20px;
-    }
-    .clockCont{
-        margin-left: 0;
-        margin-top: 25px;
-    }
-    .time{
-        margin-left: 0;
-        font-size: 38px;
-    }
+    flex-direction: column;
+    width: 300px;
+    height: 540px;
+    border-radius: 200px 200px 20px 20px;
+  }
+  .clockCont {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .time {
+    margin-left: 0;
+    font-size: 38px;
+  }
 }
