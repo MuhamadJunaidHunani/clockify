@@ -52,9 +52,8 @@ body {
   background-color: transparent;
 }
 .clockCont .fifth-stick {
-  /* Your styles here */
   font-weight: 900;
-  font-size: 12px; /* Example style */
+  font-size: 12px;
 }
 .cntrClock {
   width: 10px;
@@ -89,11 +88,6 @@ body {
   background-color: black;
   transform-origin: bottom;
 }
-
-/* .DigiCont{
-        width: 250px;
-        height: 220px;
-    } */
 
 .time {
   font-size: 40px;
